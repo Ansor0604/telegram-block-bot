@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foydalanuvchilar</title>
+</head>
+<body>
+    <h1>Foydalanuvchilar ro‘yxati</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user[1] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/greet">➕ Yangi foydalanuvchi qo‘shish</a>
+</body>
+</html>

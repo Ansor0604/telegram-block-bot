@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Asoslari</title>
+</head>
+<body>
+<header>
+<h1>Mening Veb-saytim</h1>
+<nav>
+<ul>
+<li><a href="#home">Bosh sahifa</a></li>
+<li><a href="#about">Haqida</a></li>
+<li><a href="#contact">Aloqa</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="home">
+<h2>Xush kelibsiz!</h2>
+<p>Bu mening birinchi professional veb-saytim.</p>
+<img src="welcome.jpg" alt="Xush kelibsiz rasmi">
+</section><section id="about">
+<h2>Men haqimda</h2>
+<p>Men web developer bo'lishni o'rganyapman.</p>
+</section>
+</main>
+<form action="/submit" method="POST">
+    <div>
+    <label for="name">Ismingiz:</label>
+    <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+    <label for="age">Yoshingiz:</label>
+    <input type="number" id="age" name="age" min="1" max="120">
+    </div>
+    <div>
+    <label for="message">Xabar:</label>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    </div>
+    <div>
+    <label>
+    <input type="checkbox" name="subscribe" value="yes">
+    Yangiliklar uchun obuna bo'lish
+    </label>
+    </div>
+    <div>
+    <label>Jinsingiz:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Erkak</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Ayol</label>
+    </div>
+    <button type="submit">Yuborish</button>
+    </form>
+<footer>
+<p>&copy; 2024 Mening Veb-saytim. Barcha huquqlar himoyalangan.</p>
+</footer>
+</body>
+</html>
