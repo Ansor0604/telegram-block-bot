@@ -1,3 +1,4 @@
+import os
 import pytz
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
@@ -62,7 +63,8 @@ async def check_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 print(e)
 
 def main():
-    app = Application.builder().token("8443380352:AAG3caDsuTz78UVAX-u2uxNdS7dpD6ewcYQ").build()
+    TOKEN = os.getenv("BOT_TOKEN")
+    app = Application.builder().token(TOKEN).build()
 
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, check_message))
 
